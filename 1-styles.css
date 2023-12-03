@@ -113,7 +113,6 @@ template{display:none}
 
     h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family);
-    font-weight: bold;
     }
 
       /*** 2. LAYOUT ***/
@@ -156,8 +155,7 @@ template{display:none}
     }
   
     .nav {
-        margin: 0
-;
+        margin: 0;
         padding: 0;
         list-style: none;
         line-height: 15px;
@@ -188,6 +186,7 @@ template{display:none}
 
     .hero .h1 {
         font-size: 2rem;
+        font-weight: 700;
         margin: 0;
     }
 
@@ -198,7 +197,7 @@ template{display:none}
 
     .header span {
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 20px;
     }
 
@@ -225,7 +224,6 @@ template{display:none}
         display: block;
         width: 13px;
         height: 2px;
-        /* position: relative; */
         background: var(--color-white);
         border-radius: 2px;
     }
@@ -378,4 +376,89 @@ template{display:none}
           margin-top: 20px;
         }
       }
-    
+/* What we do 
+  =========================== */
+
+  .what-we-do {
+    color: var(--color-black);
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: var(--desctiption-box-width);
+    margin: 135px auto 90px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .section-header p {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .section-header h1 {
+    font-size:  32px;
+    line-height: 1.5rem;
+  }
+  
+  .section-body .container{
+    display: flex;
+    text-align: center;
+    margin-bottom: 110px;
+    max-width: 1002px;
+    height: auto;
+  }
+
+  .section-body .container .services {
+    padding:  0 27px;
+  }
+
+  .section-body .container .services h3 {
+    font-size: 18px;
+  }
+
+  .section-body .container .services p {
+    font-size: 14px;
+    width: 207px;
+    height: 52px;
+  }
+
+  .icon {
+    font-size: 6em;
+    color: var(--link-color-hover-active);
+  }
+  @media screen and (max-width: 768) {
+    :root{
+    --service-spacing: 65px;
+  }
+  .what-we-do .section-body .container {
+    flex-wrap: wrap;
+    max-width: 472px;
+    margin: 0 auto 110px auto;
+  }
+  .services {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .what-we-do .section-header {
+    scroll-behavior: auto;
+    flex-wrap: wrap;
+    max-width: 325px;
+    margin-bottom: 110px;
+  }
+  .what-we-do .section-body .container {
+    padding: 0;
+    scroll-behavior: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 325px;
+    margin-bottom: 110px;
+  }
+  
+}
+
