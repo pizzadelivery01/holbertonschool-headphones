@@ -86,7 +86,10 @@ template{display:none}
     body {
     color: var(--text-color);
     font-family: var(--font-family);
+    background-color: black;
+    margin: auto;
     }
+    
 
     .button {
     color: var(--text-color);
@@ -95,7 +98,7 @@ template{display:none}
     border: 0px;
     border-radius: 22px;
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     width: 162px;
     height: 44px;
@@ -135,7 +138,7 @@ template{display:none}
 
     .header {
         background-image: url(images/headphones_hero_1.jpg);
-        background-color: var(--color-black);
+        background-color: black;
         max-width: 100%;
         height: 800px;
         background-repeat: no-repeat;
@@ -146,48 +149,54 @@ template{display:none}
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding-top: 28px;
+        padding-top: 27px;
     }
+
+   .navbar-menu ul {
+    padding-top: 9px;
+   }
 
     .header-logo {
         width: 161px;
         height: 32px;
     }
+
   
     .nav {
         margin: 0;
         padding: 0;
         list-style: none;
         line-height: 15px;
-        font-weight: bold;
+        font-weight: 700;
         text-align: center;
         display: flex;
     }
 
     .nav .nav-item {
-        margin: 0 20.5px 0 20.5px;
+        margin: 0 0 0 41px;
     }
 
-    .nav .nav-item .nav-link {
+    .nav .nav-item a {
+      font-size: 12px;
         text-decoration: none;
         color: var(--text-color);
     }
 
-    .nav .nav-item .nav-link:hover {
+    .nav .nav-item a:hover {
         color: var(--link-color-hover-active);
     }
 
     .hero {
-        padding-top: 312px;
+        padding-top: 293px;
         max-width: var(--desctiption-box-width);
         text-align: center;
         margin: 0 auto;
     }
 
-    .hero .h1 {
+    .hero h1 {
         font-size: 2rem;
         font-weight: 700;
-        margin: 0;
+        margin-bottom: 0;
     }
 
     .hero button {
@@ -204,7 +213,7 @@ template{display:none}
     .header p {
         font-size: 1rem;
         line-height: 26px;
-        font-weight: normal;
+        font-weight: 400;
         margin: 0;
     }
 
@@ -302,8 +311,10 @@ template{display:none}
         .header {
           background-image: url(images/headphones_hero_1.jpg);
           background-position: 35%;
-          background-position-y: -40px;
+          /*background-position-y: -45px;*/
           background-size: cover;
+          width: 100%;
+          background-color: var(--color-black);
           height: auto;
         }
         .container {
@@ -325,6 +336,14 @@ template{display:none}
       
         .header-logo {
           margin: 0 auto;
+        }
+        .header h1 {
+          line-height: 40px;
+          margin: 0;
+        }
+        .header span {
+          line-height: 20px;
+          padding-top: 5px;
         }
         .navbar-menu {
           display: none;
@@ -356,6 +375,8 @@ template{display:none}
           margin-bottom: 65px;
         }
         .hero p {
+          font-size: 16px;
+          font-weight: 400;
           padding-left: 11px;
           padding-right: 11px;
         }
@@ -381,6 +402,15 @@ template{display:none}
 
   .what-we-do {
     color: var(--color-black);
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+  }
+  
+  .what-we-do .container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
   }
 
   .section-header {
@@ -390,9 +420,10 @@ template{display:none}
     align-items: center;
     text-align: center;
     max-width: var(--desctiption-box-width);
-    margin: 135px auto 90px;
+    margin: 0px auto 0px;
     line-height: 26px;
     font-weight: 400;
+    background-color: white;
   }
   .section-header p {
     font-size: 16px;
@@ -402,13 +433,14 @@ template{display:none}
   .section-header h1 {
     font-size:  32px;
     line-height: 1.5rem;
+    margin-top: 118px;
   }
   
   .section-body .container{
     display: flex;
     text-align: center;
     margin-bottom: 110px;
-    max-width: 1002px;
+    max-width: 1400px;
     height: auto;
   }
 
